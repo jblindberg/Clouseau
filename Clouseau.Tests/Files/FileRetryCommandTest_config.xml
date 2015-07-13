@@ -1,0 +1,17 @@
+﻿
+<!-- Command to Retry file -->
+<command>
+  <name>FILE_RETRY</name>
+  <label>Retry Send</label>
+  <description>Try again to process file that failed</description>
+  <class>Clouseau.FileRetryCommand</class>
+  <active>true</active>
+
+  <!-- special configuration parameters for Command -->
+  <!-- path to Ready folder, plus UNC authentication info -->
+  <retryPath><![CDATA[\\testshare\C$\Inspector\Test\Ready]]></retryPath>
+  <retryUser>administrator</retryUser>
+  <retryPassword>password</retryPassword>
+
+</command>
+

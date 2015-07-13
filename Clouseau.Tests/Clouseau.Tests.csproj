@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{417CB70B-5EC6-4239-A5BD-F90EB43BC568}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clouseau.Tests</RootNamespace>
+    <AssemblyName>Clouseau.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="AbstractStationTest.cs" />
+    <Compile Include="Classes\TestInstance.cs" />
+    <Compile Include="Classes\TestInstance1.cs" />
+    <Compile Include="Classes\TestStation.cs" />
+    <Compile Include="Classes\TestStation1.cs" />
+    <Compile Include="Classes\TestStationCommand.cs" />
+    <Compile Include="ConfigDataTest.cs" />
+    <Compile Include="CriterionTest.cs" />
+    <Compile Include="FileFolderStationTest.cs" />
+    <Compile Include="FileRetryCommandTest.cs" />
+    <Compile Include="FileSystemConnectionTest.cs" />
+    <Compile Include="InstanceMemoryTest.cs" />
+    <Compile Include="PipelineTest.cs" />
+    <Compile Include="StationEntityTest.cs" />
+    <Compile Include="StationTest_1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\FileFolderRemoteTest_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Files\FileFolderTest\Failed\XMLFile1.xml" />
+    <Content Include="Files\FileFolderTest\Holding\H3.txt" />
+    <Content Include="Files\FileFolderTest\Holding\Unused\20100115BAD.txt" />
+    <Content Include="Files\FileFolderTest_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Files\FileRetryCommandTest_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Files\TestPipeline_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Files\TestStation1_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Files\TestStation_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Files\x3root2config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\FileFolderTest\Holding\20090310.BAD" />
+    <None Include="Files\FileFolderTest\Holding\No Extension With Spaces" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\FileFolderTest\Holding\Sub_Holding\" />
+    <Folder Include="Files\FileFolderTest\Ready\" />
+    <Folder Include="Files\FileFolderTest\Unused\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clouseau\Clouseau.csproj">
+      <Project>{3f8fb4cc-eebb-4876-8d93-0c88b083d8e2}</Project>
+      <Name>Clouseau</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

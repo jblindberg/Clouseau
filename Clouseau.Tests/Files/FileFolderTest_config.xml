@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<station>
+	<description>Test FileFolder</description>
+	<class>Clouseau.FileFolderStation</class>
+	<!-- special configuration parameters for FileFolderStation -->
+	<homePath><![CDATA[C:\projects\Open\ClouseauOpen\Clouseau.Tests\Files\FileFolderTest\]]></homePath>
+	<maxSearchResults>1000</maxSearchResults>
+	<entityName>REQUEST</entityName>
+	<folder>
+		<name>Holding</name>
+		<status>HOLDING</status>
+	</folder>
+	<folder>
+		<name>Ready</name>
+	</folder>
+	<folder>
+		<name>NonExistent</name>
+	</folder>
+	<folder>
+		<name>Holding/Sub_Holding</name>
+		<status>SUBHOLDING</status>
+	</folder>
+	<extension>.txt</extension>
+	<extension>.log</extension>
+
+</station>

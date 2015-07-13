@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<station>
+	<description>Remote FileFolder</description>
+	<class>Clouseau.FileFolderStation</class>
+	<!-- special configuration parameters for FileFolderStation -->
+	<homePath><![CDATA[\\test1.company.com\C$\Inspector\Test\Service]]></homePath>
+	<maxSearchResults>1000</maxSearchResults>
+	<entityName>REQUEST</entityName>
+	<folder>
+		<name>Holding</name>
+	</folder>
+	<folder>
+		<name>Nonexistent</name>
+	</folder>
+	<folder>
+		<name>Archive</name>
+	</folder>
+	<folder>
+		<name>Holding/Error</name>
+		<status>Error</status>
+	</folder>
+	<extension>.pdf</extension>
+	<extension>.tif</extension>
+	<extension>.tiff</extension>
+	<extension>.htm</extension>
+	<extension>.html</extension>
+</station>

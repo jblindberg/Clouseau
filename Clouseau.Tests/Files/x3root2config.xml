@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<config>
+		<child>Child Text 1</child>
+		<child>Child Text 2</child>
+	</config>
+	<xxx>
+		<child>Child Text x1</child>
+		<child>Child Text x2</child>
+	</xxx>
+	<config>
+		<child>3</child>
+		<child>4</child>
+	</config>
+</root>

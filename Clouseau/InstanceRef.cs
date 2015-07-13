@@ -1,0 +1,50 @@
+/*
+ * Copyright (c) 2015 Jeff Lindberg
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+namespace Clouseau
+{
+
+    /// <summary>
+    /// Way to remember (in InstanceMemory) instances found by a station, 
+    /// so they can be used in subsequent inspections or commands.
+    /// </summary>
+	public interface InstanceRef
+	{
+
+        /// <summary>
+        /// Unique ID for this reference to an Instance
+        /// </summary>
+        long Id { get; }
+
+        /// <summary>
+        /// Instance this reference refers to.
+        /// </summary>
+        /// <returns>can be null if the instance is obsolete.</returns>
+        Instance Instance { get; }
+
+        /// <summary>
+        /// Reference to the station this instance came from.
+        /// </summary>
+        Station Station { get; }
+
+	}
+}
