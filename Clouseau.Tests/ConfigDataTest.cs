@@ -16,7 +16,7 @@ namespace Clouseau.Tests
 	{
         // TODO put these files in a resource, or else dynamically find the right path
 		//public static string TESTFILEDIR = @"..\..\..\..\..\UnitTests\Clouseau.Tests\Files\";
-        public static string TESTFILEDIR = @"C:\projects\Open\ClouseauOpen\Clouseau.Tests\Files\";
+        public static string TESTFILEDIR = @"C:\projects\Open\Clouseau\Clouseau.Tests\Files\";
 		
         private TestContext testContextInstance;
 

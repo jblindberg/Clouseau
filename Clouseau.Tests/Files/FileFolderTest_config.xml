@@ -3,7 +3,7 @@
 	<description>Test FileFolder</description>
 	<class>Clouseau.FileFolderStation</class>
 	<!-- special configuration parameters for FileFolderStation -->
-	<homePath><![CDATA[C:\projects\Open\ClouseauOpen\Clouseau.Tests\Files\FileFolderTest\]]></homePath>
+	<homePath><![CDATA[C:\projects\Open\Clouseau\Clouseau.Tests\Files\FileFolderTest\]]></homePath>
 	<maxSearchResults>1000</maxSearchResults>
 	<entityName>REQUEST</entityName>
 	<folder>
