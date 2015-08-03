@@ -1,0 +1,407 @@
+3/16/2009 7:58:22 AM:
+---------- START AUM ----------
+3/16/2009 7:59:50 AM:
+Processing Branch Main Library
+3/16/2009 7:59:51 AM:
+TN		RAPID
+
+3/16/2009 7:59:54 AM:
+Skipping Branch FC Depository
+3/16/2009 7:59:54 AM:
+---------- END AUM ----------
+3/16/2009 7:59:54 AM:
+---------- START MUU ----------
+3/16/2009 8:00:34 AM:
+Processing Branch Main Library
+3/16/2009 8:01:00 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 1 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:01:00 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 2 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:01:00 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 3 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:01:00 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 4 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:01:01 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:01:13 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+MUU Lending Failed
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 576
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.GetLenderAddressByBranch(LenderAddress address, Branch branch) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 61
+   at RapidSQLXMLBusinessObjects.illiad.LenderAddress.GetByBranch(String rapidCode, String branchName) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\LenderAddress.cs:line 47
+   at Rapid2Lending.UnmediatedLendingProcess.executeSite(Site site) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 160
+   at Rapid2Lending.UnmediatedLendingProcess.ExecuteProcess() in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 36
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:01:56 AM:
+Processing Branch Main Library
+3/16/2009 8:02:38 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 1 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:02:38 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 2 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:02:39 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 3 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:02:39 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 4 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:02:39 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU,DIST,ENGR,GEOL,ILL,JOUR,MATH'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:05:19 AM:
+---------- START AUM ----------
+3/16/2009 8:05:25 AM:
+Processing Branch Main Library
+3/16/2009 8:05:26 AM:
+TN		RAPID
+
+3/16/2009 8:05:28 AM:
+Skipping Branch FC Depository
+3/16/2009 8:05:28 AM:
+---------- END AUM ----------
+3/16/2009 8:05:28 AM:
+---------- START MUU ----------
+3/16/2009 8:05:38 AM:
+Processing Branch Main Library
+3/16/2009 8:05:45 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 1 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:05:45 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 2 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:05:46 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 3 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:05:46 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 4 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:05:46 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:06:28 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+MUU Lending Failed
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Van+Pelt'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 576
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.GetLenderAddressByBranch(LenderAddress address, Branch branch) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 61
+   at RapidSQLXMLBusinessObjects.illiad.LenderAddress.GetByBranch(String rapidCode, String branchName) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\LenderAddress.cs:line 47
+   at Rapid2Lending.UnmediatedLendingProcess.executeSite(Site site) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 160
+   at Rapid2Lending.UnmediatedLendingProcess.ExecuteProcess() in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 36
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 8:06:28 AM:
+---------- END MUU ----------
+3/16/2009 8:06:50 AM:
+---------- START AUM ----------
+3/16/2009 8:07:08 AM:
+Processing Branch Main Library
+3/16/2009 9:57:28 AM:
+---------- START AUM ----------
+3/16/2009 9:57:30 AM:
+Processing Branch Main Library
+3/16/2009 9:57:42 AM:
+TN		RAPID
+629673		2406981
+
+3/16/2009 9:57:44 AM:
+Skipping Branch FC Depository
+3/16/2009 9:57:44 AM:
+---------- END AUM ----------
+3/16/2009 9:57:44 AM:
+---------- START MUU ----------
+3/16/2009 9:57:53 AM:
+Processing Branch Main Library
+3/16/2009 9:58:08 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Dental+Library'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 1 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 9:58:08 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Dental+Library'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 2 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 9:58:08 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Dental+Library'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 3 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 9:58:08 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Dental+Library'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 4 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 9:58:08 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Dental+Library'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 9:58:18 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+MUU Lending Failed
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.ApplicationException
+Error execuing query '?sql=SELECT+*+FROM+LenderAddressesAll+WHERE+LenderString+=+'RAPID-PAU'+AND+LibraryName+=+'Dental+Library'+AND+NVTGC+=+'MUU'+FOR+XML+AUTO&root=root' on attempt 5 of 5
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 576
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.GetLenderAddressByBranch(LenderAddress address, Branch branch) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 61
+   at RapidSQLXMLBusinessObjects.illiad.LenderAddress.GetByBranch(String rapidCode, String branchName) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\LenderAddress.cs:line 47
+   at Rapid2Lending.UnmediatedLendingProcess.executeSite(Site site) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 160
+   at Rapid2Lending.UnmediatedLendingProcess.ExecuteProcess() in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 36
+
+-------- EXCEPTION (INNER) --------TYPE: System.Net.WebException
+The remote server returned an error: (403) Forbidden.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at RapidSQLXMLBusinessObjects.illiad.Data.IlliadLendingData.executeQuery(String sql, Boolean isSelect) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\RapidSQLXMLBusinessObjects\RapidSQLXMLBusinessObjects\illiad\Data\IlliadLendingData.cs:line 556
+
+
+
+------- END EXCEPTION DETAILS ------
+
+3/16/2009 9:58:18 AM:
+---------- END MUU ----------
+3/16/2009 9:58:30 AM:
+Processing Branch Main Library

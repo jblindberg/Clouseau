@@ -96,13 +96,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Files\FileFolderTest\Holding\20090310.BAD" />
+    <None Include="Files\FileFolderTest\Holding\H1.log" />
+    <None Include="Files\FileFolderTest\Holding\H2.LOG" />
     <None Include="Files\FileFolderTest\Holding\No Extension With Spaces" />
+    <None Include="Files\FileFolderTest\Holding\Sub_Holding\SUB999.log" />
+    <None Include="Files\FileFolderTest\Holding\Unused\20091116BAD.log" />
+    <None Include="Files\FileFolderTest\Ready\R1234.log" />
+    <None Include="Files\FileFolderTest\Unused\20091026BAD.log" />
+    <None Include="Files\FileFolderTest\Unused\20091028BAD.log" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Files\FileFolderTest\Holding\Sub_Holding\" />
-    <Folder Include="Files\FileFolderTest\Ready\" />
-    <Folder Include="Files\FileFolderTest\Unused\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Clouseau\Clouseau.csproj">
       <Project>{3f8fb4cc-eebb-4876-8d93-0c88b083d8e2}</Project>

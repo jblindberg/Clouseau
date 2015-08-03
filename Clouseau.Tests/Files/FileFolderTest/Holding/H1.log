@@ -1,0 +1,44 @@
+3/11/2009 8:41:29 AM:
+---------- START AUM ----------
+3/11/2009 8:41:49 AM:
+Processing Branch Main Library
+3/11/2009 8:42:02 AM:
+-------- EXCEPTION --------TYPE: System.ApplicationException
+AUM Lending Failed
+
+
+-------- EXCEPTION (INNER) --------TYPE: System.ApplicationException
+Error obtaining pending requests
+   at Rapid2Lending.UnmediatedLendingProcess.executeSite(Site site) in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 130
+   at Rapid2Lending.UnmediatedLendingProcess.ExecuteProcess() in C:\Users\jdouglas\Documents\Visual Studio 2008\Projects\RAPID_SourceControl\Rapid2Processes\Rapid2Lending\Rapid2Lending\UnmediatedLendingProcess.cs:line 36
+
+
+------- END EXCEPTION DETAILS ------
+
+3/11/2009 8:42:02 AM:
+---------- END AUM ----------
+3/11/2009 8:42:04 AM:
+---------- START AUM ----------
+3/11/2009 8:42:19 AM:
+Processing Branch Main Library
+3/11/2009 9:06:20 AM:
+---------- START AUM ----------
+3/11/2009 9:06:33 AM:
+Processing Branch Main Library
+3/11/2009 9:15:54 AM:
+---------- START AUM ----------
+3/11/2009 9:15:56 AM:
+Processing Branch Main Library
+3/11/2009 9:16:25 AM:
+TN		RAPID
+628446		2395585
+628447		2386042
+628448		2395784
+628449		2395794
+628450		2393857
+628451		2393855
+
+3/11/2009 9:16:27 AM:
+Skipping Branch FC Depository
+3/11/2009 9:16:27 AM:
+---------- END AUM ----------
