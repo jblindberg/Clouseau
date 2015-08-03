@@ -19,6 +19,9 @@ namespace Clouseau.Tests
 		private static string STATION_CONFIG_PATH = ConfigDataTest.TESTFILEDIR + "FileFolderTest_config.xml";
 		private Stream configStream = new FileStream(STATION_CONFIG_PATH, FileMode.Open, FileAccess.Read);
 
+        // TODO to test remote folder (file share) functionality:
+        //   In the following config file, update the <homePath> to an accessible remote folder
+        //   Copy the subfolders of the RemoteFileFolderTest folder to that remote folder
 		private static string STATION_REMOTE_CONFIG_PATH = ConfigDataTest.TESTFILEDIR + "FileFolderRemoteTest_config.xml";
 		private Stream remoteConfigStream = new FileStream(STATION_REMOTE_CONFIG_PATH, FileMode.Open, FileAccess.Read);
 
@@ -91,7 +94,7 @@ namespace Clouseau.Tests
 
 
 		/// <summary>
-		///A test for doSearch
+        /// Test max limit of search results from remote file folder
 		///</summary>
 		[TestMethod()]
 		public void doRemoteSearchMaxTest()
@@ -115,7 +118,7 @@ namespace Clouseau.Tests
 		}
 
 		/// <summary>
-		///A test for doSearch
+		/// Search remote folder on not equal to status
 		///</summary>
 		[TestMethod()]
 		public void doRemoteSearchAllTest()
@@ -137,13 +140,13 @@ namespace Clouseau.Tests
 				Console.WriteLine(i.Details);
 			}
 
-			Assert.IsTrue(FoundResult(instances, "3292216", "Holding", "3292216.tiff"));
-			Assert.AreEqual(6, instances.Count);
+			Assert.IsTrue(FoundResult(instances, "3292216", "Holding", "3292216.pdf"));
+			Assert.AreEqual(4, instances.Count);
 
 		}
 
 		/// <summary>
-		///A test for doSearch
+		/// Test DoSearch in local folder
 		///</summary>
 		[TestMethod()]
 		public void doSearchAllTest()
@@ -171,7 +174,7 @@ namespace Clouseau.Tests
 		}
 
 		/// <summary>
-		///A test for doSearch
+		/// Test for ID in subfolder
 		///</summary>
 		[TestMethod()]
 		public void doSearchUniqueIDTest()
@@ -194,72 +197,9 @@ namespace Clouseau.Tests
 
 		}
 
-		/// <summary>
-		///A test for doSearch
-		///</summary>
-		[TestMethod()]
-		public void doSearchDateTest()
-		{
-			FileFolderStation s = CreateRemoteTestStation();
 
-			ICollection<Criterion> crit = new List<Criterion>();
-			Criterion c1 = new Criterion(Field.InstanceUpdateDate, Criterion.GreaterThanOrEqual, "4/1/2010");
-			crit.Add(c1);
-			Criterion c3 = new Criterion(Field.InstanceUpdateDate, Criterion.LessThan, "5/1/2010");
-			crit.Add(c3);
-			Criterion c2 = new Criterion(Field.InstanceStatus, Criterion.Equal, "Archive");
-			crit.Add(c2);
-
-			InstanceRefList actual = s.DoSearch(crit);
-
-			List<Instance> instances = actual.InstanceList;
-
-			foreach (Instance i in instances)
-			{
-				Console.WriteLine(i.Details);
-			}
-
-			Assert.AreEqual(10, actual.List.Count);
-			Assert.IsTrue(FoundResult(instances, "3307322", "Archive", "3307322.pdf"));
-
-		}
-
-		/// <summary>
-		///A test for doSearch
-		///</summary>
-		[TestMethod()]
-		public void doSearchArrivalDateTest()
-		{
-			FileFolderStation s = CreateRemoteTestStation();
-
-			ICollection<Criterion> crit = new List<Criterion>();
-            Criterion c1 = new Criterion(Field.InstanceArrivalDate, Criterion.GreaterThanOrEqual, "2/12/2015 16:05:07");
-			crit.Add(c1);
-            Criterion c3 = new Criterion(Field.InstanceArrivalDate, Criterion.LessThan, "2/12/2015 16:05:09");
-			crit.Add(c3);
-
-            DateTime start = new DateTime(2015, 2, 12, 16, 5, 6);
-            DateTime end = new DateTime(2015, 2, 12, 16, 5, 9);
-
-			InstanceRefList actual = s.DoSearch(crit);
-
-			List<Instance> instances = actual.InstanceList;
-
-			foreach (Instance i in instances)
-			{
-				Console.WriteLine(i.Details);
-				Assert.IsTrue(i.ArrivalDate > start);
-				Assert.IsTrue(i.ArrivalDate < end);
-			}
-
-			Assert.IsTrue(actual.List.Count > 0, "Will fail if file dates have changed"); // NOTE:  Depends on the last time the test files were moved/copied
-            // Thursday, February 12, 2015, 4:05:07 PM
-            // Thursday, February 12, 2015, 4:05:08 PM
-
-		}
-
-		/// <summary>
-		///A test for doSearch
+        /// <summary>
+		/// A test for DoSearch on date and ID
 		///</summary>
 		[TestMethod()]
 		public void doSearchIDTest()
@@ -267,9 +207,9 @@ namespace Clouseau.Tests
 			FileFolderStation s = CreateRemoteTestStation();
 
 			ICollection<Criterion> crit = new List<Criterion>();
-			Criterion c1 = new Criterion(Field.InstanceUpdateDate, Criterion.GreaterThanOrEqual, "5/1/2010");
+			Criterion c1 = new Criterion(Field.InstanceUpdateDate, Criterion.GreaterThanOrEqual, "5/1/2015");
 			crit.Add(c1);
-			Criterion c2 = new Criterion(Field.EntityId, Criterion.Equal, "3230596");
+			Criterion c2 = new Criterion(Field.EntityId, Criterion.Equal, "12345");
 			crit.Add(c2);
 
 			InstanceRefList actual = s.DoSearch(crit);
@@ -282,11 +222,9 @@ namespace Clouseau.Tests
 			}
 
 			Assert.AreEqual(2, actual.List.Count);
-			Assert.IsTrue(FoundResult(instances, "3230596", "Archive", "3230596.pdf"));
+			Assert.IsTrue(FoundResult(instances, "12345", "Archive", "12345.pdf"));
 
 		}
-
-
 
 
 
@@ -412,7 +350,7 @@ namespace Clouseau.Tests
             Assert.AreEqual(ContentType.Pdf, s.ContentType(inst));
 
             byte[] content = s.Content(inst);
-            Assert.AreEqual(2535804, content.Length);
+            Assert.AreEqual(217721, content.Length);
 
         }
 

@@ -87,8 +87,14 @@ namespace Clouseau.Tests
 
             string newID = DateTime.Now.Ticks.ToString();
 
-            string remoteTargetDir = @"\\test1.company.com\C$\Inspector\Test\Delay\Ready\";
-            string remoteTargetPath = remoteTargetDir + newID + ".tif";
+            // TODO to test remote folder (file share) functionality:
+            //   Below, use the path of an accessible remote folder
+            //   Copy the subfolders of the RemoteFileFolderTest folder to that remote folder
+            //   And update the <retryPath> in FileRetryCommandTest_config.xml 
+
+            //string remoteTargetDir = @"\\test1.company.com\C$\Inspector\Test\Delay\Ready\";
+            string remoteTargetDir = @"C:\projects\Open\Clouseau\Clouseau.Tests\Files\FileFolderTest\Ready\";
+            string remoteTargetPath = remoteTargetDir + newID + ".xml";
 
             // delete existing file
             // NOTE: This is commented out because it had problems getting error 1219 from the UNC connection
@@ -106,7 +112,7 @@ namespace Clouseau.Tests
 
             FileFolderInstance instance = new FileFolderInstance();
             instance.ID = newID;
-            instance.FileName = "DOC46711.tif";
+            instance.FileName = "13531.xml";
             instance.Location = "FileFolderTest/Failed/" + instance.FileName;
             instance.Path = ConfigDataTest.TESTFILEDIR + instance.Location;
 

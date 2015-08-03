@@ -3,8 +3,9 @@
 	<description>Remote FileFolder</description>
 	<class>Clouseau.FileFolderStation</class>
 	<!-- special configuration parameters for FileFolderStation -->
-	<homePath><![CDATA[\\test1.company.com\C$\Inspector\Test\Service]]></homePath>
-	<maxSearchResults>1000</maxSearchResults>
+    <!--<homePath><![CDATA[\\test1.company.com\C$\Test\Clouseau]]></homePath>-->
+    <homePath><![CDATA[C:\projects\Open\Clouseau\Clouseau.Tests\Files\RemoteFileFolderTest]]></homePath>
+    <maxSearchResults>10</maxSearchResults>
 	<entityName>REQUEST</entityName>
 	<folder>
 		<name>Holding</name>
@@ -21,7 +22,7 @@
 	</folder>
 	<extension>.pdf</extension>
 	<extension>.tif</extension>
-	<extension>.tiff</extension>
-	<extension>.htm</extension>
+    <extension>.txt</extension>
+    <extension>.htm</extension>
 	<extension>.html</extension>
 </station>

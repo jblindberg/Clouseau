@@ -9,7 +9,7 @@
 
   <!-- special configuration parameters for Command -->
   <!-- path to Ready folder, plus UNC authentication info -->
-  <retryPath><![CDATA[\\testshare\C$\Inspector\Test\Ready]]></retryPath>
+  <retryPath><![CDATA[C:\projects\Open\Clouseau\Clouseau.Tests\Files\FileFolderTest\Ready]]></retryPath>
   <retryUser>administrator</retryUser>
   <retryPassword>password</retryPassword>
 

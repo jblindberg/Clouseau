@@ -74,7 +74,7 @@
     <Content Include="Files\FileFolderRemoteTest_config.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Files\FileFolderTest\Failed\XMLFile1.xml" />
+    <Content Include="Files\FileFolderTest\Failed\13531.xml" />
     <Content Include="Files\FileFolderTest\Holding\H3.txt" />
     <Content Include="Files\FileFolderTest\Holding\Unused\20100115BAD.txt" />
     <Content Include="Files\FileFolderTest_config.xml">
@@ -83,6 +83,14 @@
     <Content Include="Files\FileRetryCommandTest_config.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Files\RemoteFileFolderTest\Archive\1212123.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Archive\123.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Archive\456123.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Archive\54321.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Archive\87654.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Holding\12121.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Holding\Error\654321.txt" />
+    <Content Include="Files\RemoteFileFolderTest\Holding\Error\78787.txt" />
     <Content Include="Files\TestPipeline_config.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -104,8 +112,14 @@
     <None Include="Files\FileFolderTest\Ready\R1234.log" />
     <None Include="Files\FileFolderTest\Unused\20091026BAD.log" />
     <None Include="Files\FileFolderTest\Unused\20091028BAD.log" />
+    <None Include="Files\RemoteFileFolderTest\Archive\12345.pdf" />
+    <None Include="Files\RemoteFileFolderTest\Archive\2510989.pdf" />
+    <None Include="Files\RemoteFileFolderTest\Holding\3292216.pdf" />
+    <None Include="Files\RemoteFileFolderTest\Ignore\2510989.pdf" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Files\RemoteFileFolderTest\Ready\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Clouseau\Clouseau.csproj">
       <Project>{3f8fb4cc-eebb-4876-8d93-0c88b083d8e2}</Project>

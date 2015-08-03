@@ -7,6 +7,11 @@ namespace Clouseau.Tests
     [TestClass]
     public class FileSystemConnectionTest
     {
+        // TODO to test UNC functionality: 
+        //    update the UNC paths below to actual file share locations
+        //    put some files in each test folder
+        //    update the related user and passwords
+
         private const string UNC_CONNECTED_1 = @"\\share10\C$\Test";
         private const string UNC_CONNECTED_2 = @"\\share11\C$\Test";
         private const string UNC_UNCONNECTED_3 = @"\\share12\C$\Test";
